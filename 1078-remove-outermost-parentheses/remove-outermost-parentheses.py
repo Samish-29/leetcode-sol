@@ -1,14 +1,14 @@
 class Solution(object):
     def removeOuterParentheses(self, s):
         result = ""
-        balance = 0 
+        bracket = 0 
         for ch in s:
             if ch == '(':
-                if balance > 0:
+                if bracket > 0:
                     result += ch
-                balance += 1
+                bracket += 1
             else:
-                balance -= 1
-                if balance > 0:
+                bracket -= 1
+                if bracket > 0:
                     result += ch
         return result

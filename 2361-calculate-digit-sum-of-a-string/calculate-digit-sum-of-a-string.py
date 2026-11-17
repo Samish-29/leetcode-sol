@@ -8,3 +8,4 @@ class Solution(object):
                 result += str(total)
             s = result
         return s
+        
